@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "luci.warp",
+  "name": "Cloudflare WARP",
+  "version": "1.0.0",
+  "author": "luci",
+  "license": "MIT",
+  "description": "Connect and disconnect Cloudflare WARP straight from the bar, with a status panel.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Cloudflare WARP",
+    "description": "Left click toggles WARP on or off; right click opens status details.",
+    "category": "Network",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "refreshIntervalSec": 15
+    },
+    "schema": [
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Refresh interval (seconds)",
+        "min": 3,
+        "max": 3600,
+        "step": 1,
+        "defaultValue": 15
+      }
+    ]
+  }
+}
