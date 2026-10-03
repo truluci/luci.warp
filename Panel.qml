@@ -151,9 +151,8 @@ Panel {
 
         Text {
           width: parent.width
-          text: warp.installed
-            ? "t toggle · r refresh · esc close"
-            : "Install the cloudflare-warp package to use this widget."
+          visible: !warp.installed
+          text: "Install the cloudflare-warp package to use this widget."
           color: Qt.darker(root.foreground, 1.5)
           font.family: root.fontFamily
           font.pixelSize: Style.font.caption
