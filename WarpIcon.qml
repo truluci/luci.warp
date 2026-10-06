@@ -27,7 +27,9 @@ Item {
 
   Canvas {
     id: canvas
-    anchors.fill: parent
+    width: parent.width * 1.3
+    height: parent.height * 1.3
+    anchors.centerIn: parent
     antialiasing: true
 
     SequentialAnimation on opacity {
@@ -103,18 +105,18 @@ Item {
       ctx.lineCap = "round"
       ctx.globalCompositeOperation = "destination-out"
       ctx.strokeStyle = "#000000"
-      ctx.lineWidth = Math.max(3, s * 0.22)
+      ctx.lineWidth = Math.max(2, s * 0.15)
       ctx.beginPath()
-      ctx.moveTo(s * 0.14, s * 0.86)
-      ctx.lineTo(s * 0.86, s * 0.14)
+      ctx.moveTo(s * 0.16, s * 0.84)
+      ctx.lineTo(s * 0.78, s * 0.22)
       ctx.stroke()
 
       ctx.globalCompositeOperation = "source-over"
       ctx.strokeStyle = root.color
-      ctx.lineWidth = Math.max(1.5, s * 0.11)
+      ctx.lineWidth = Math.max(1, s * 0.07)
       ctx.beginPath()
-      ctx.moveTo(s * 0.14, s * 0.86)
-      ctx.lineTo(s * 0.86, s * 0.14)
+      ctx.moveTo(s * 0.16, s * 0.84)
+      ctx.lineTo(s * 0.78, s * 0.22)
       ctx.stroke()
     }
   }
