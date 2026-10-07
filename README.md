@@ -2,6 +2,9 @@
 
 Bar widget for Cloudflare WARP (`warp-cli`).
 
+<img width="352" height="173" alt="image" src="https://github.com/user-attachments/assets/6eab6104-c2a6-4436-8ef1-9cf248b697f9" />
+
+
 ## Features
 
 - Shows WARP connection state in the bar as a cloud mark: solid when
